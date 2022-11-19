@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New part</title>
+    <link rel="stylesheet" href="styles/create_styles.css">
+</head>
+<body>
+<div class="top_cover">
+
+        <div class="top_title">
+        <h3>Панель керування</h3>
+        </div>
+        <div class="top_link">
+            <a href="/static/pages/parts/create">Додати товар</a>
+        </div>
+        <div class="top_link">
+            <a href="/static/pages/parts/update">Редагування товарів</a>
+        </div>
+        <div class="top_link">
+            <a href="/static/pages/parts/update">Керування категоріями</a>
+        </div>
+        <div class="top_link">
+            <a href="/static/pages/parts/update">Замовлення</a>
+        </div>
+        <div class="top_link">
+            <a href="/static/pages/parts/update">До магазину</a>
+        </div>
+
+</div>
+
+
+
+<div class="input_block">
+    <h3>Нова запчастина</h3>
+    <br>
+<form class="input_form" name='myForm' method="post">
+
+<div class="row">
+    <div class="col-25">
+    <lable for="name">Назва</lable>
+    </div>
+    <div class="col-75">
+    <input type="text" id="name">
+    </div>
+</div>
+
+
+    <div class="row">
+        <div class="col-25">
+    <lable for="part_number">Артикул</lable>
+        </div>
+        <div class="col-75">
+    <input type="text" id="part_number">
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col-25">
+    <lable for="description">Опис</lable>
+            </div>
+            <div class="col-75">
+                <textarea name="description" id="description" style="height: 200px"></textarea>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col-25">
+    <lable for="image_URL">Зображення</lable>
+                </div>
+                <div class="col-75">
+    <input type="text" id="image_URL">
+                </div>
+            </div>
+
+    <div class="row">
+        <div class="col-25">
+    <lable for="price">Ціна</lable>
+        </div>
+        <div class="col-75">
+    <input type="text" id="price">
+    </div>
+    </div>
+    <div class="row">
+    <input type="submit" value="Створити" id="myForm_btn">
+    </div>
+</form>
+</div>
+
+<div id="response"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/new_part_main.js"></script>
+</body>
+</html>
